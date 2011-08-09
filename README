@@ -1,0 +1,26 @@
+# Ruby wrapper for various Bitcoin Pool APIs
+
+Most Bitcoin mining pools provide an API to access their statistics. This allows you to access the stats from many pools with the same API.
+
+Installation
+------------
+    gem install pool_stats
+
+Documentation
+-------------
+[http://rdoc.info/gems/pool_stats](http://rdoc.info/gems/pool_stats)
+
+Continuous Integration
+[![Build Status](https://secure.travis-ci.org/josephholsten/pool_stats.png)](http://travis-ci.org/josephholsten/pool_stats)
+
+Usage Examples
+--------------
+
+  require 'pool_stats'
+
+  puts PoolStats::Bitpit.hash_rate
+  puts PoolStats::Bitpit.round
+  puts PoolStats::Bitpit.shares
+  puts PoolStats::Bitpit.duration
+  puts PoolStats::Bitpit.round_start
+  puts PoolStats::Bitpit.pps_price
